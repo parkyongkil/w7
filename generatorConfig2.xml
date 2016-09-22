@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry
+		location="C:/java/java-libraries/oracle-jdbc-driver-12g/ojdbc7.jar" />
+	<context id="TEST" targetRuntime="MyBatis3">
+		<jdbcConnection connectionURL="jdbc:oracle:thin:@10.20.11.104:1521:xe"
+			driverClass="oracle.jdbc.OracleDriver" password="root" userId="system" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="true" />
+		</javaTypeResolver>
+		<javaModelGenerator targetPackage="demo.iba.mod"
+			targetProject="demo" />
+		<sqlMapGenerator targetPackage="demo.iba.map"
+			targetProject="demo" />
+		<javaClientGenerator targetPackage="demo.iba.cli"
+			targetProject="demo" type="XMLMAPPER" />
+		<table schema="test" tableName="test" />
+	</context>
+</generatorConfiguration>

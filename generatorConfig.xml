@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry
+		location="C:/java/java-libraries/oracle-jdbc-driver-12g/ojdbc7.jar" />
+	<context id="TEST" targetRuntime="MyBatis3">
+		<jdbcConnection connectionURL="jdbc:oracle:thin:@10.1.9.38:23100:TMIS"
+			driverClass="oracle.jdbc.OracleDriver" password="scgs_parkyk" userId="scgs_parkyk" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="true" />
+		</javaTypeResolver>
+		<javaModelGenerator targetPackage="scg.c24.biz.db.gen.model"
+			targetProject="../scg.c24.card/src/main/java" />
+		<sqlMapGenerator targetPackage="scg.c24.biz.db.gen.model"
+			targetProject="../scg.c24.card/src/main/java" />
+		<javaClientGenerator targetPackage="scg.c24.biz.db.gen.model"
+			targetProject="../scg.c24.card/src/main/java" type="XMLMAPPER" />
+
+		<table schema="A11" tableName="A1AT_ZIP" />
+
+		<table schema="C11" tableName="C1AT_CERT_MST" />
+
+		<table schema="C11" tableName="C1AT_CUST_INFO" />
+
+		<table schema="C11" tableName="C1AT_REAL_NM_CERT" />
+
+		<table schema="C11" tableName="C1AT_TRANS_ACNT" />
+		<table schema="C11" tableName="C1AT_TRANS_ACNT_REQ" />
+
+		<table schema="C11" tableName="C1BT_CARD_CNL_SEND" />
+		<table schema="C11" tableName="C1BT_CARD_RECEV_INF" />
+
+		<table schema="C11" tableName="C1BT_CARD_REQ_DOC" />
+		<table schema="C11" tableName="C1BT_CARD_TRANS_INF" />
+
+		<table schema="C11" tableName="C1BT_USE_CONT" />
+		<table schema="C11" tableName="C1BT_USE_CONT_TRANS" />
+
+		<table schema="C11" tableName="C1BT_REQ_INFO" />
+
+		<table schema="C21" tableName="C2BT_PAY_TOT_OBJ" />
+		<table schema="C21" tableName="C2DT_EBPP_AUTO_CNL" />
+
+		<table schema="C31" tableName="C3AT_INST_PLACE" />
+
+		<table schema="H11" tableName="SCS_TRANS_REQ" />
+
+	</context>
+</generatorConfiguration>

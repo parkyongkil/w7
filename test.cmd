@@ -1,0 +1,1 @@
+java -cp build/classes org.mybatis.generator.api.ShellRunner -configfile generatorConfig.xml -overwrite
